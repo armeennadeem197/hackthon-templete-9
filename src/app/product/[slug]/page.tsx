@@ -1,4 +1,3 @@
-
 "use client"; // This must be at the top
 import { useState, useEffect } from "react";
 import { useCartStore } from "@/store/cartStore";
@@ -25,9 +24,9 @@ async function getProduct(slug: string): Promise<Product | null> {
   const query = `*[_type == "menuItem" && slug.current == $slug][0]{
     id,
     name,
-export default function ProductPage({ params }: { params: { slug: string } }) {
+    price,
     discountPercentage,
-  const [product, setProduct] = useState<Product | null>(null);
+    stockLevel,
     spicinessLevel,
     isVegetarian,
     isFeaturedItem,
@@ -68,7 +67,21 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
           </div>
         </div>
       </header>
-
+      <section
+        className="bg-cover bg-center h-64 flex items-center justify-center"
+        style={{ backgroundImage: "url('/allnav.png')" }}
+      >
+        <div className="text-center text-white">
+          <h2 className="text-4xl font-bold">Our Shop</h2>
+          <p className="pt-[10px]">
+            <Link href="/" className="text-yellow-400">
+              Home
+            </Link>{" "}
+            › Shop
+          </p>
+        </div>
+      </section>
+      
       <main className="container mx-auto px-4 py-8">
         <div className="grid md:grid-cols-2 gap-8">
           <div className="relative h-96 md:h-full">

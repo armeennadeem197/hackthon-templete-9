@@ -1,4 +1,5 @@
 "use client";
+
 import { useState } from "react";
 import Link from "next/link";
 import { MdLockOutline } from "react-icons/md";
@@ -145,7 +146,7 @@ export default function SignInPage() {
           </form>
           <div className="text-center mt-4">
             <p>
-              Don't have an account?{" "}
+              Don&apos;t have an account?{" "}
               <Link href="/signup" className="text-yellow-500">
                 Sign Up
               </Link>

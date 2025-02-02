@@ -2,14 +2,13 @@ import Image from "next/image"
 import Link from "next/link"
 
 interface ProductCardProps {
-  id: string
   name: string
   image: string
   slug: { current: string }
   price: number
 }
 
-const ProductCard = ({ id, name, image, slug, price }: ProductCardProps) => {
+const ProductCard = ({  name, image, slug, price }: ProductCardProps) => {
   return (
     <Link href={`/product/${slug.current}`} className="group">
       <div className="lg:w-full md:w-1/2 p-4 w-full">

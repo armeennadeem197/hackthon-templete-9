@@ -63,7 +63,6 @@ export default function CheckoutPage() {
       <div className="max-w-lg mx-auto mt-12 bg-white p-6 rounded-lg shadow-lg">
         <h2 className="text-2xl font-bold text-center text-gray-800">Secure Checkout</h2>
         <p className="text-gray-500 text-center mt-2">Complete your purchase by entering your payment details below.</p>
-
         <Elements stripe={stripePromise} options={{ clientSecret }}>
           <PaymentForm />
         </Elements>

@@ -32,7 +32,6 @@ async function getData() {
 }
 
 export default function Newest() {
-  const [menuOpen, setMenuOpen] = useState(false);
   const [data, setData] = useState<Chef[]>([]);
 
   useEffect(() => {
@@ -46,9 +45,7 @@ export default function Newest() {
 
   return (
     <div>
-      <Header/>
-
-      {/* Hero Section */}
+      <Header />
       <section
         className="bg-cover bg-center h-64 flex items-center justify-center"
         style={{ backgroundImage: "url('/allnav.png')" }}

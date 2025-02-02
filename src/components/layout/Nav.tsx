@@ -7,7 +7,6 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import Link from 'next/link';
 import { HiOutlineShoppingBag } from 'react-icons/hi2';
 
-
 const Nav = () => {
   return (
     <div className="w-full flex flex-col lg:px-[100px] px-[20px] lg:py-[20px] py-[10px]">
@@ -33,13 +32,11 @@ const Nav = () => {
             />
             <IoSearch className="text-white w-[20px] h-[20px]" />
           </div>
-          <div className='bg-white'>
+          <div>
+          <Link href="/shoppingcart"><HiOutlineShoppingBag className="text-whitetext text-[24px] cursor-pointer" /></Link>
           </div>
             </div>
-            <Link href="/shoppingcart"><HiOutlineShoppingBag className="text-whitetext text-[24px] cursor-pointer" /></Link>
-
       </div>
-
       {/* Mobile Navigation */}
       <div className="lg:hidden flex justify-between px-[30px] bg-white">
         <Image src={foodlogo} alt="logo" className="w-[150px] h-auto" />
@@ -56,6 +53,7 @@ const Nav = () => {
               <Link href={"/aboutus"}><li className='font-medium hover:text-black'>About</li></Link>
               <Link href={"/shop"}><li className='font-medium hover:text-black'>Shop</li></Link>
               <Link href={"/signin"}><li className='font-medium hover:text-black'>Signin</li></Link>
+
             </ul>
           </SheetContent>
         </Sheet>

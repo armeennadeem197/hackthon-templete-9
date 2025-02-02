@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { useRouter } from "next/router";
 
 interface UserProfile {
   name: string;
@@ -14,7 +13,6 @@ interface UserProfile {
 export default function ProfilePage() {
   const [user, setUser] = useState<UserProfile | null>(null);
   const [loading, setLoading] = useState(false);
-  const router = useRouter();
 
   useEffect(() => {
     // Fetch user data from Sanity

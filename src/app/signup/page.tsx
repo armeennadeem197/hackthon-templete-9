@@ -1,6 +1,4 @@
 "use client";
-
-import Image from "next/image";
 import { useState } from "react";
 import Link from "next/link";
 import { AiOutlineUser } from "react-icons/ai";
@@ -71,7 +69,7 @@ export default function SignUpPage() {
                 <Link href="/Newest">Shop</Link>
               </li>
               <li>
-                <Link href="/signin">Signin</Link>
+                <Link href="/signin">Sign In</Link>
               </li>
             </ul>
           </nav>
@@ -84,12 +82,12 @@ export default function SignUpPage() {
         style={{ backgroundImage: "url('/allnav.png')" }}
       >
         <div className="text-center text-white">
-          <h2 className="text-4xl font-bold">Sign up page</h2>
+          <h2 className="text-4xl font-bold">Sign Up Page</h2>
           <p className="pt-2">
             <Link href="/" className="text-yellow-400">
               Home
             </Link>{" "}
-            › Sign up
+            › Sign Up
           </p>
         </div>
       </section>
