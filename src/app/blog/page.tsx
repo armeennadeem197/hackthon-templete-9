@@ -6,7 +6,6 @@ import client from "../../../public/client.png"
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoSearch } from "react-icons/io5";
 import { PiUserBold } from "react-icons/pi";
-import { HiOutlineShoppingBag } from "react-icons/hi2";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { LuArrowUpFromLine } from "react-icons/lu";
 import { GoCommentDiscussion } from "react-icons/go";
@@ -15,6 +14,7 @@ import { IoLogoGithub } from "react-icons/io";
 import { FaInstagram ,FaFacebook  ,FaLinkedin  } from "react-icons/fa6";
 import { BsCalendarMonth } from "react-icons/bs";
 import Link from 'next/link';
+import { HiOutlineShoppingBag } from 'react-icons/hi2';
 const page = () => {
   return (
     <div className=''>
@@ -29,13 +29,13 @@ const page = () => {
             <li><Link href="/ourchef">Chef</Link></li>
             <li><Link href="/aboutus">About</Link></li>
             <li><Link href="/shop">Shop</Link></li>
-            <li><Link href="/signin">Signin</Link></li>
+            <li><Link href="/auth/signin">Signin</Link></li>
             </ul>
           </nav>
           <div className="flex gap-4 ">
           <h1><IoSearch className="text-whitetext text-[24px] cursor-pointer" /></h1>
-          <h1><Link href={"/signup"}><PiUserBold className="text-whitetext text-[24px] cursor-pointer" /></Link></h1>
-          <h1><Link href={"/shoppingcart"}><HiOutlineShoppingBag className="text-whitetext text-[24px] cursor-pointer" /></Link> </h1>
+          <h1><Link href={"/auth/signup"}><PiUserBold className="text-whitetext text-[24px] cursor-pointer" /></Link></h1>
+          <Link href="/shoppingcart"><HiOutlineShoppingBag className="text-whitetext text-[24px] cursor-pointer" /></Link>
           </div>
          <div className="lg:hidden block">
          <Sheet>
@@ -43,14 +43,14 @@ const page = () => {
             <GiHamburgerMenu className="text-whitetext text-[24px] cursor-pointer" />
           </SheetTrigger>
           <SheetContent>
-            <ul className="flex flex-col gap-[10px] font-medium text-[16px] text-blackkk">
+            <ul className="flex flex-col gap-[10px] font-medium text-[16px] text-blackk">
             <li><Link href="/">Home</Link></li>
             <li><Link href="/ourmenu">Menu</Link></li>
             <li><Link href="/blog">Blog</Link></li>
             <li><Link href="/ourchef">Chef</Link></li>
             <li><Link href="/aboutus">About</Link></li>
             <li><Link href="/shop">Shop</Link></li>
-            <li><Link href="/signin">Signin</Link></li>
+            <li><Link href="/auth/signin">Signin</Link></li>
             </ul>
           </SheetContent>
         </Sheet> 
@@ -114,10 +114,10 @@ const page = () => {
             pug VHS try-hard.
           </p>
           <div className='flex gap-2 justify-center text-xl text-blackkk mt-1'>
-                <a href="https://pk.linkedin.com/in/ghaniya-khan-138919308"> <FaLinkedin /></a>
-                <a href="https://github.com/Ghaniya08"><IoLogoGithub  /></a>
-                <a href="https://instagram.com/ghaniya08">< FaInstagram/></a>
-                <a href="https://www.facebook.com/profile.php?id=61554662968933&mibextid=ZbWKwL"><FaFacebook /></a></div>
+                <a href=""> <FaLinkedin /></a>
+                <a href="https://github.com/"><IoLogoGithub  /></a>
+                <a href="https://instagram.com/">< FaInstagram/></a>
+                <a href=""><FaFacebook /></a></div>
         </div>
       </div>
     </div>
@@ -336,10 +336,10 @@ const page = () => {
         <div className="border-[1px] border-gray-400 mt-10 px-[22px] py-4 max-w-[400px] mx-auto">
         <h1 className='text-2xl font-bold'>Follow us</h1>
         <div className='flex gap-4 justify-center text-xl text-blackkk mt-1'>
-                <a href="https://pk.linkedin.com/in/ghaniya-khan-138919308"> <FaLinkedin /></a>
-                <a href="https://github.com/Ghaniya08"><IoLogoGithub  /></a>
-                <a href="https://instagram.com/ghaniya08">< FaInstagram/></a>
-                <a href="https://www.facebook.com/profile.php?id=61554662968933&mibextid=ZbWKwL"><FaFacebook /></a>
+                <a href=""> <FaLinkedin /></a>
+                <a href=""><IoLogoGithub  /></a>
+                <a href="">< FaInstagram/></a>
+                <a href=""><FaFacebook /></a>
         </div>
         </div>
      </div>

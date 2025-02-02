@@ -1,7 +1,6 @@
 import ActiveProcess from "@/components/layout/Activeprocess";
 import Bestfoodyproduct from "@/components/layout/Bestfoodyproduct";
 import Blog from "@/components/layout/Blog";
-import Chefs from "@/components/layout/Chefs";
 import Foodcatr from "@/components/layout/Foodcatr";
 import HeroSection from "@/components/layout/Hero";
 import Nav from "@/components/layout/Nav";
@@ -26,7 +25,6 @@ export default function Home() {
     <Whyus/>
     <Review/>
     <Ourmenu/>
-    <Chefs/>
     <Testi/>
     <ActiveProcess/>
     <Blog/>
