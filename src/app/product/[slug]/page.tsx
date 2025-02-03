@@ -81,7 +81,6 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
           </p>
         </div>
       </section>
-      
       <main className="container mx-auto px-4 py-8">
         <div className="grid md:grid-cols-2 gap-8">
           <div className="relative h-96 md:h-full">
